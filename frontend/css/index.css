@@ -3,14 +3,27 @@ body{
     padding: 0px;
     margin: 0px;
     position: relative;
+    background-color: #292929;
+
 }
  nav{
     padding: 20px;
-    background-color: aqua;
+    border-bottom: black;
  }
- nav a{    
-  color: black;  
+ nav a{
+border: rgb(218, 77, 77) 2px solid;
+padding: 10px;    
+  color: rgb(255, 255, 255);  
   text-decoration: none;
   display: inline-block;
-  margin-left: 15%;
+  margin-left: 10%;
+  border-radius: 10px;
  }
+nav a:hover{
+    background-color: #05386B;
+}
+
+nav a:active{
+    background-color:darkgray;
+}
+
