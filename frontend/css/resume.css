@@ -1,4 +1,22 @@
+
 h1{
-    background-color: aqua;
+    text-align: center;
+    background-color: aqua;   
+}
+h2
+{
+    text-align: center;
+    background-color: rgb(101, 113, 122);
+}
+table,td{
+    border: black 2px solid;
+}
+pre{
+    font-family: 'Times New Roman', Times, serif;
     
 }
+a,span{
+    margin-left: 10%;
+
+}
+
