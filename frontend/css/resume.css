@@ -1,4 +1,10 @@
 
+body
+{
+    border: black 2px solid;
+    overflow: scroll;
+}
+
 h1{
     text-align: center;
     background-color: aqua;   
@@ -10,6 +16,9 @@ h2
 }
 table,td{
     border: black 2px solid;
+      border-collapse: collapse;
+
+
 }
 pre{
     font-family: 'Times New Roman', Times, serif;
