@@ -1,0 +1,16 @@
+body{
+    background-color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+ nav{
+    padding: 20px;
+    background-color: aqua;
+ }
+ nav a{    
+  color: black;  
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15%;
+ }

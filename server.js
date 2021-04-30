@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 //this is home handler 
 app.get("/", function(req, res){
-    res.send("Welcome to  Basic Site");
+    res.sendFile(__dirname+"/frontend/html/index.html");
 })
 app.use(express.static(__dirname+"/frontend"));
 
