@@ -5,10 +5,12 @@ const app = express();
 app.get("/", function(req, res){
     res.send("Welcome to  Basic Site");
 })
+app.use(express.static(__dirname+"/frontend"));
+
 //this is resume handler
 app.get("/resume",function(req,res)
-{
-    res.send("resume");
+{   let path=__dirname
+    res.sendFile(__dirname+"/frontend/html/resume.html");
 });
  
 // Heroku will automatically set an environment variable called PORT
