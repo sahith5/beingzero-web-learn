@@ -1,0 +1,39 @@
+img{
+width: 13px;
+height: 13px;
+}
+nav{
+    display: block;
+    float: right;
+}
+a{
+    margin-left: 10px;
+    font-family: Arial, sans-serif ;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.image{
+ background-image: url(/images/googlet.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 200px;
+width: 200px;
+display: block;
+position: relative;
+left: 42.5%;
+top:100px;
+}
+.input{
+    width: 100px;
+    position: relative;
+    left: 40%;
+    top:20px
+
+}
+input{
+    width: 100%;
+}

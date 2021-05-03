@@ -5,8 +5,15 @@ const app = express();
 app.get("/", function(req, res){
     res.sendFile(__dirname+"/frontend/html/index.html");
 })
+
+
 app.use(express.static(__dirname+"/frontend"));
 
+
+app.get("/google",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/google.html");
+})
 //this is resume handler
 app.get("/resume",function(req,res)
 {   let path=__dirname
