@@ -1,0 +1,65 @@
+*{
+    background-color: #000;
+padding: 0px;
+margin: 0px;
+}
+.mainheader a{
+    text-decoration: none;
+ color: darkgray;
+ background-color:rgba(22,22,23,0.8);
+}
+header{
+    background-color: rgba(22,22,23,0.8);
+
+}
+.mainheader{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;    align-items: center;
+    background-color: rgba(22,22,23,0.8);
+    font-size: 17px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    justify-content: space-around;
+    height: 45px;
+}
+.sheader a{
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    color:#fff;
+    text-decoration: none;
+    background:local;
+    font-size: 12.5px;
+}
+.left{
+display: block;
+float: left;
+}
+.right{
+    display: block;
+    float: right;
+}
+.right a{
+    margin-left: 25px;
+}
+.ipad{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.sheader{
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    padding: 0%;
+    height: 35px;
+    position: sticky;
+    top: 0px;
+    background:currentColor;
+}
+
