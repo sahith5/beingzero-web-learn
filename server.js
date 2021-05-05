@@ -10,14 +10,19 @@ app.get("/", function(req, res){
 
 app.use(express.static(__dirname+"/frontend"));
 
+app.get("/color",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/color.html");
+})
 
 
-
-
+//this is google handler
 app.get("/google",function(req,res)
 {
     res.sendFile(__dirname+"/frontend/html/google.html");
 })
+
+
 //this is resume handler
 app.get("/resume",function(req,res)
 {   let path=__dirname
@@ -25,11 +30,13 @@ app.get("/resume",function(req,res)
 });
  
 
-
+//this is apple handler
 app.get("/apple",function(req,res)
 {
     res.sendFile(__dirname+"/frontend/html/apple.html");
 })
+
+
 // Heroku will automatically set an environment variable called PORT
 const PORT = process.env.PORT || 3000;
  
