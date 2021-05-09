@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    }
+
+div{
+    margin-top: 5%;
+
+}
+h3{
+    display: inline-block;
+}
+form{
+
+    width: fit-content;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block;
+    margin: 20% auto;
+    height: 200px;
+    border: 2px black solid;
+
+}

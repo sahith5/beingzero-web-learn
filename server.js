@@ -30,6 +30,17 @@ app.get("/resume",function(req,res)
 });
  
 
+app.get("/login",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/login.html")
+})
+
+app.get("/register",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/register.html")
+})
+
+
 //this is apple handler
 app.get("/apple",function(req,res)
 {
