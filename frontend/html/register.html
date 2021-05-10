@@ -9,30 +9,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <form style="border: 2px solid black; width: 40%; padding: 10px;" >
-        <div>
-        <label for="mail"><h3>mail:</h3></label>
-        <input type="mail" name="mail" id="mail" placeholder="**********@gmail.com" style="width: 300px;">
-        </div>
-        <div>
-        <label for="name"> <h3>name:</h3> </label>        
-        <input type="text" name="name" placeholder="name"  id="name" style="width: 300px;">
-        </div>
-        
-        <h3>gender</h3>
+
+    <h1>REGISTER</h1>
     
-        
+    <form style="border: 2px solid black; width: 40%; padding: 10px;" >
+     
+     
+     
+    <div>
+        <label for="mail"><h3>mail:</h3></label>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="mail" name="mail" id="mail" placeholder="**********@gmail.com" style="width: 300px;">
+    </div>
+    
+    
+    
+    <div>
+        <label for="name"> <h3>name:</h3> </label>
+        <i class="fa fa-user" aria-hidden="true"></i>        
+        <input type="text" name="name" placeholder="name"  id="name" style="width: 300px;">
+    </div>
+    
+    
+    <div>
+        <h3>gender</h3>    
         <input type="radio" name="gender" id="male" value="male">
         <label for="male">male:</label>
-        </div>
-        <div>
+    </div>
+
+
+
+    <div>
         <input type="radio" name="gender" id="female" value="female">
         <label for="female">female:</label>
-        </div>
-        <div>
+    </div>
+    
+    
+    
+   <div>
         <label for="dob"><h3>date of birth:</h3></label>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
         <input type="date" name="dob" id="dob" >
     </div>
+  
+  
+  
     <div>
 
         <label for="college"><h3>college</h3></label>    
@@ -45,6 +66,10 @@
             <option value="cmrcet"> CMREC</option>
         </select>
     </div>
+   
+   
+   
+   
     <div>
 
         <label for="year of graduation" id="year" name="year"><h3>year of graduation</h3></label>
@@ -56,7 +81,11 @@
             <option value="2019">2022</option>
         </select>
     </div>
+
+    
         <button>register</button>
+    
+    
     </form>
 </body>
 </html>
