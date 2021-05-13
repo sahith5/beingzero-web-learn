@@ -1,6 +1,16 @@
 const express = require('express');
  
 const app = express();
+
+
+
+
+
+app.get("/api/users",function(req,res)
+{
+res.json(users);
+})
+
 //this is home handler 
 app.get("/", function(req, res){
     res.sendFile(__dirname+"/frontend/html/index.html");
@@ -54,4 +64,10 @@ const PORT = process.env.PORT || 3000;
 // Start the server
 app.listen(PORT, function(){
     console.log("Server Starting running on http://localhost:"+PORT);
+})
+
+
+app.get("/todo",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/todo.html");
 })
