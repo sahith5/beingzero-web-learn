@@ -4,6 +4,23 @@ const app = express();
 
 
 
+const mongoose=require('mongoose');
+var password=process.env.password;
+console.log(password);
+
+const connectionstring="mongodb+srv://sahith:"+password+"@cluster0.jivxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const dboptions={}
+
+mongoose.connect(connectionstring,dboptions);
+//connect to db
+//const connectionstring=" "
+//const dboptions={};
+//once connection is established
+mongoose.connection.on('connected',function()
+{
+    console.log("connected to database");
+})
+//once conection is done define a schema
 
 
 app.get("/api/users",function(req,res)
@@ -70,4 +87,9 @@ app.listen(PORT, function(){
 app.get("/todo",function(req,res)
 {
     res.sendFile(__dirname+"/frontend/html/todo.html");
+})
+
+app.get("/thambola",function(req,res)
+{
+    res.sendFile(__dirname+"/frontend/html/thambola.html");
 })
